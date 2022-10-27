@@ -1,0 +1,8 @@
+.cards-1 {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr auto auto 1fr;
+}
+
+.cards-1 a:hover {
+    background-color: #f8f9fa;
+}
