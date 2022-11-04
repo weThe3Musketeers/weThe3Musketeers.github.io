@@ -1,11 +1,10 @@
+
 @media (max-width: 600px) {
 
-    /* space bw cards in mobile */
     .app-cards {
         margin-bottom: 3rem !important;
     }
 
-    /* hidden navbar in privacy policy and terms page in mobile view */
     .hidden-sm{
         display: none;
     }
