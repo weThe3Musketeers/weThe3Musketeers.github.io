@@ -1,8 +1,13 @@
-.cards-1 {
-    grid-auto-flow: column;
-    grid-template-columns: 1fr auto auto 1fr;
-}
+@media (max-width: 600px) {
 
-.cards-1 a:hover {
-    background-color: #f8f9fa;
+    /* space bw cards in mobile */
+    .app-cards {
+        margin-bottom: 3rem !important;
+    }
+
+    /* hidden navbar in privacy policy and terms page in mobile view */
+    .hidden-sm{
+        display: none;
+    }
+    
 }

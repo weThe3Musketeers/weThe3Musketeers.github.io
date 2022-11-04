@@ -6,6 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="..\assets\css\index.css">
 
+        <!-- favicon -->
+
+        <link rel="icon" type="image/x-icon" href="assets\icons\favicon.ico">
+
+        <!-- author, keywords, desc. -->
+
+        <meta name="description" content="The Three Musketeers apps">
+        <meta name="keywords" content="The Three Musketeers, KVHAA, Mysuru commute">
+        <meta name="author" content="The Three Musketeers">
+
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- Optional JavaScript; choose one of the two! -->
@@ -22,33 +32,37 @@
         <title>The 3 Musketeers</title>
     </head>
     <body>
-        <nav class="navbar navbar-light bg-light border-bottom">
-            <div class="container-fluid">
-                <a class="navbar-brand fs-1 pb-2 fw-bold" href="#">
-                    <img src="assets\icons\3musk(1).png" alt="logo" width="60" height="48" class="img-fluid d-inline-block align-text-top">
-                    The 3 Musketeers
-                </a>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-sm-4 p-0">
-                    <a href="mysuru-commute/mysuru-commute.html" target="_blank" class="card text-decoration-none text-dark">
-                        <img src="assets\icons\mcbanner.webp" class="img-fluid card-img-top rounded-2" alt="...">
-                        <div class="card-body rounded-3 d-flex flex-row align-items-center">
-                            <img src="assets\icons\mclogo.webp" alt="..." class="ps-2 pe-3">
-                            <p class="card-text fw-bold">Mysuru Commute (Mysore City Bus)</p>
+        <div class="mb-5">
+            <nav class="navbar navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-1 py-auto fw-bold d-flex flex-row align-items-center" href="#">
+                        <img src="assets\icons\3musk(1).png" alt="logo" width="60" height="48" class="d-inline-block align-text-top img-fluid">
+                        <div class="py-auto fw-bold ">
+                            The 3 Musketeers
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 p-0 ms-lg-3">
-                    <a href="kvhaa\kvhaa.html" target="_blank" class="card text-decoration-none text-dark">
-                        <img src="assets\icons\kvhaa.webp" class="img-fluid card-img-top rounded-2" alt="...">
-                        <div class="card-body rounded-3 d-flex flex-row align-items-center">
-                            <img src="assets\icons\kvhaalogo.webp" alt="..." class="ps-2 pe-3">
-                            <p class="card-text fw-bold">KVHAA- KV Hebbal Alumni Association</p>
-                        </div>
-                    </a>
+            </nav>
+            <div class="container">
+                <div class="row gap-4 mt-5">
+                    <div class="col-sm-4 p-0 app-cards d-flex">
+                        <a href="mysuru-commute/mysuru-commute.html" class="card text-decoration-none text-dark">
+                            <img src="assets\icons\mcbanner.webp" class="img-fluid card-img-top rounded-2" alt="...">
+                            <div class="card-body rounded-3 d-flex flex-row align-items-center">
+                                <img src="assets\icons\mclogo.webp" alt="..." class="ps-2 pe-3">
+                                <p class="card-text fw-bold">Mysuru Commute (Mysore City Bus)</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 p-0 ms-md-5 app-cards d-flex">
+                        <a href="kvhaa\kvhaa.html" class="card text-decoration-none text-dark">
+                            <img src="assets\icons\kvhaa.webp" class="img-fluid card-img-top rounded-2" alt="...">
+                            <div class="card-body rounded-3 d-flex flex-row align-items-center">
+                                <img src="assets\icons\kvhaalogo.webp" alt="..." class="ps-2 pe-3">
+                                <p class="card-text fw-bold">KVHAA- KV Hebbal Alumni Association</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
