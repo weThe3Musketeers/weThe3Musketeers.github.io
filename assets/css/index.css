@@ -1,9 +1,9 @@
 
 @media (max-width: 600px) {
 
-    .app-cards {
+    /* .app-cards {
         margin-bottom: 3rem !important;
-    }
+    } */
 
     .hidden-sm{
         display: none;
