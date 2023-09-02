@@ -52,7 +52,7 @@
       </nav>
     </div>
     <div class="main">
-        <strong>Privacy Policy</strong>
+        <strong class="hidden-sm">Privacy Policy</strong>
         <p>
           The 3 Musketeers built the Quick Alarm app as
           a Commercial app. This SERVICE is provided by
@@ -76,7 +76,7 @@
           as in our Terms and Conditions, which are accessible at
           Quick Alarm unless otherwise defined in this Privacy Policy.
         </p>
-        <p><strong>Information Collection and Use</strong></p>
+        <p><strong class="title-fs">Information Collection and Use</strong></p>
         <p>
           For a better experience, while using our Service, I
           may require you to provide us with certain personally
@@ -127,7 +127,7 @@
             <!---->
           </ul>
         </div>
-        <p><strong>Log Data</strong></p>
+        <p><strong class="title-fs">Log Data</strong></p>
         <p>
           I want to inform you that whenever you
           use my Service, in a case of an error in the app
@@ -139,7 +139,7 @@
           the time and date of your use of the Service, and other
           statistics.
         </p>
-        <p><strong>Cookies</strong></p>
+        <p><strong class="title-fs">Cookies</strong></p>
         <p>
           Cookies are files with a small amount of data that are
           commonly used as anonymous unique identifiers. These are sent
@@ -155,7 +155,7 @@
           choose to refuse our cookies, you may not be able to use some
           portions of this Service.
         </p>
-        <p><strong>Service Providers</strong></p>
+        <p><strong class="title-fs">Service Providers</strong></p>
         <p>
           I may employ third-party companies and
           individuals due to the following reasons:
@@ -173,7 +173,7 @@
           them on our behalf. However, they are obligated not to
           disclose or use the information for any other purpose.
         </p>
-        <p><strong>Security</strong></p>
+        <p><strong class="title-fs">Security</strong></p>
         <p>
           I value your trust in providing us your
           Personal Information, thus we are striving to use commercially
@@ -182,7 +182,7 @@
           storage is 100% secure and reliable, and I cannot
           guarantee its absolute security.
         </p>
-        <p><strong>Links to Other Sites</strong></p>
+        <p><strong class="title-fs">Links to Other Sites</strong></p>
         <p>
           This Service may contain links to other sites. If you click on
           a third-party link, you will be directed to that site. Note
@@ -193,7 +193,7 @@
           privacy policies, or practices of any third-party sites or
           services.
         </p>
-        <p><strong>Children’s Privacy</strong></p>
+        <p><strong class="title-fs">Children’s Privacy</strong></p>
         <div>
           <p>
             These Services do not address anyone under the age of 13.
@@ -208,7 +208,7 @@
           </p>
         </div>
         <!---->
-        <p><strong>Changes to This Privacy Policy</strong></p>
+        <p><strong class="title-fs">Changes to This Privacy Policy</strong></p>
         <p>
           I may update our Privacy Policy from
           time to time. Thus, you are advised to review this page
@@ -217,7 +217,7 @@
           this page.
         </p>
         <p>This policy is effective as of 2023-09-01</p>
-        <p><strong>Contact Us</strong></p>
+        <p><strong class="title-fs">Contact Us</strong></p>
         <p>
           If you have any questions or suggestions about my
           Privacy Policy, do not hesitate to contact me at 3musketeers378@gmail.com.
@@ -233,8 +233,13 @@
   const url = new URL(window.location.href);
   const bg = url.searchParams.get("bgColor")?.replace("%23", "#");
   const textClr = url.searchParams.get("textColor")?.replace("%23", "#");
+  const titleTextClr = url.searchParams.get("titleTextColor")?.replace("%23", "#");
   document.body.style.background = bg;
   document.body.style.color = textClr;
+  elements = document.getElementsByClassName("title-fs");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.color = titleTextClr;
+  }
 </script>
 
 </html>
