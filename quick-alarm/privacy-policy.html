@@ -231,8 +231,8 @@
 </body>
 <script>
   const url = new URL(window.location.href);
-  const bg = url.searchParams.get("bgColor");
-  const textClr = url.searchParams.get("textColor");
+  const bg = url.searchParams.get("bgColor")?.replace("%23", "#");
+  const textClr = url.searchParams.get("textColor")?.replace("%23", "#");
   document.body.style.background = bg;
   document.body.style.color = textClr;
 </script>
