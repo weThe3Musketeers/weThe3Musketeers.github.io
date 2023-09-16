@@ -11,6 +11,16 @@
     
 }
 
+* {
+    font-family: 'Alike', serif;
+    font-family: 'Comfortaa', cursive;
+}
+
 .title-fs {
     font-size: 22px !important;
+}
+
+.app-font {
+    font-family: 'Alike', serif;
+    font-family: 'Comfortaa', cursive;
 }
